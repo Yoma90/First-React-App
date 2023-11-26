@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Navbar.css'
+import background_image from './Assets/background.avif'
 
 class Navbar extends Component {
     // const[clicked, isClicked] = useState(false)
@@ -30,6 +31,17 @@ class Navbar extends Component {
                         <i id='bar' className={this.state.clicked ? 'fa fa-times' : 'fa fa-bars'}></i>
                     </div>
                 </nav>
+
+                <section id='container'>
+                    <div className='image'>
+                        <img src={background_image} alt=''/>
+                        <h1>Home/</h1>
+                    </div>
+                </section>
+
+                <section>
+                    
+                </section>
             </>
         )
     }
