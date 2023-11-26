@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Navbar.css'
 import background_image from './Assets/background.avif'
 
-class Navbar extends Component {
+class Images extends Component {
     // const[clicked, isClicked] = useState(false)
     state = {clicked: false}
     handleClick = () => {
@@ -19,8 +19,8 @@ class Navbar extends Component {
                     </a>
                     <div>
                         <ul id='navbar' className={this.state.clicked ? '#navbar active' : '#navbar'}>
-                            <li><a className='active' href='index.html'>Home</a></li>
-                            <li><a href='index.html'>About</a></li>
+                            <li><a href='index.html'>Home</a></li>
+                            <li><a className='active' href='about.html'>About</a></li>
                             <li><a href='index.html'>Team</a></li>
                             <li><a href='index.html'>Blog</a></li>
                             <li><a href='index.html'>Contact</a></li>
@@ -35,7 +35,7 @@ class Navbar extends Component {
                 <section id='container'>
                     <div className='image'>
                         <img src={background_image} alt=''/>
-                        <h1>Home/</h1>
+                        <h1>About/</h1>
                     </div>
                 </section>
             </>
@@ -43,4 +43,4 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar
+export default Images
